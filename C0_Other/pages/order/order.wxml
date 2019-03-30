@@ -1,0 +1,24 @@
+<view wx:if="{{t==true}}"  class='z zz'>
+  <text>\n我的收藏：\n\n</text>
+</view>
+<view class='list'>
+ <block wx:for='{{gs}}' wx:key='{{goods_id}}'  wx:for-item="item"  wx:if="{{item.goods_collect==1}}">
+  <view   class="list_item"  >
+   <view bindtap='gDetail' data-item='{{item}}' class='wrapper'>
+      <view class='img'>
+        <image src="{{item.goods_img}}"  mode="scaleToFill"></image>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='price'>￥{{item.goods_price}}</view>
+        <view class='info2' data-item='{{item}}' catchtap='cancel'>取消收藏</view>
+      </view>
+      
+      <view class='clear'></view>
+    </view>
+  </view>
+  </block>
+</view>
+<view wx:if="{{t==false}}"  class='z '>
+  您的收藏夹空空如也
+</view>

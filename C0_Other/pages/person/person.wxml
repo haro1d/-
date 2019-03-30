@@ -1,0 +1,34 @@
+
+<view>
+  <view class='header'>
+    <view class='header-tx'>
+      <open-data type="userAvatarUrl" wx:if="{{isLogin}}"></open-data>
+      <view class='unLogin-tx' wx:else><text class='tx-icon daoke-icon icon-denglu'></text></view>
+    </view>
+    <view>
+      <view class='info-login font-large' bindtap='toLogin' wx:if="{{!isLogin}}">登录/注册</view>
+      <view class='info-login' wx:else><open-data type="userNickName" class="userNickName"></open-data></view>
+    </view> 
+  </view>
+  <view class='menus font-middle'>
+    <view class='menus-top'>
+      <view class='menus-item' hover-class='btn-click-2' bindtap='navigatorToOrder'>
+        
+        <text class='item-title'>我的收藏</text>
+        <text class='arrow icon'></text>
+      </view>
+    </view>
+    <view class='menus-middle'> 
+      <view class='menus-item' hover-class='btn-click-2' bindtap='toSuggestion'>
+        
+        <text class='item-title'>意见反馈</text><text class='arrow icon'></text>
+      </view>
+      <view class='menus-item' hover-class='btn-click-2' bindtap='ct'>
+  
+        <text class='item-title'>联系客服</text><text class='arrow icon'></text>
+      </view>
+    </view>
+    <view class='menus-bottom'></view>
+    <view class='exit' wx:if="{{isLogin}}" bindtap='exit' hover-class='btn-click-242'>退出登录</view>
+  </view>
+</view>

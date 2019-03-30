@@ -1,0 +1,39 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class='tt'>{{goods[id].goods_title}}</view>
+  <view class='largePhoto'>
+    <image class='l' src="{{goods[id].goods_img}}" mode='widthFix'></image>
+  </view>
+  
+  <view class='text'>
+    <text >\n第一行商品信息\n第二行商品信息\n第三行商品信息</text>
+  </view>
+</view>
+<view class='bt'>
+  <button class='bt1' bindtap='showRule'>购买</button>
+  <button class='bt2' bindtap='collect'>收藏</button>
+</view>
+<!--  遮罩层  -->
+<view class="float {{payTrue?'payShow':'payHide'}}">
+<view class='floatContent'>
+   
+    <view class='bt4'>{{goods[id].goods_title}}</view>
+    <view class='price1'>
+      <text class="price2">¥{{goods[id].goods_price*num}}
+      </text>
+      <view class='bt3'>价格</view>
+    </view>
+    <view class='ruleHide' bindtap='hideRule'>x</view>
+    <!-- 数值加减 --> 
+    <view class="stepper">  
+      
+       <!-- 减号 -->  
+       <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+       <!-- 数值 -->  
+       <input type="number" bindchange="bindManual" value="{{num}}"><view class='bt3'><text>数量</text></view></input>
+       <!-- 加号 -->  
+       <text class="normal" bindtap="bindPlus">+</text>  
+    </view>  
+    <view class='bot'><navigator><text class='tom'>结算</text></navigator></view>
+</view>
+</view>

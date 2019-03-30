@@ -1,0 +1,43 @@
+<text>\n\n\n</text>
+<view class='firstphoto'>
+  <image style="width:450rpx;height:380rpx;" src="../../im/bgflower.png" ></image>
+</view>
+
+<view class='lh'>
+  <navigator class='shadow' hover-class='btn-click-1' url="../index1/index1" open-type='navigate'>广东省惠州市惠东县平山镇xx路xx号</navigator>
+  <view class='arrow'></view> 
+  <text class='fs'>\n</text>
+  <view hover-class='btn-click-1' class='shadow'>时间：08:00-22:00</view>  
+  <text class='fs'>\n</text>
+  <view hover-class='btn-click-1' bindtap='ct' class='shadow'>电话：020-850000</view>
+  <view class='arrow'></view> 
+</view>
+<text>\n</text>
+     <!-- 半透明分割线 <view class="divLine" style="opacity:{{0.6}}"></view>-->
+     
+<view class='padding'>
+      <button class='bt1' open-type='contact'>
+        <image style="width:80rpx;height:80rpx;" src="../../im/smile.png" ></image> 
+        在线客服
+      </button>
+</view>
+
+<view class="d">
+  <text>门店图片：</text>
+</view>
+<view class='display'>
+  <navigator class='logo'>
+    <image style="width:180rpx;height:180rpx;" src="../../im/meihua.jpg"></image>
+  </navigator>
+  <view class='logo'>
+   <image style="width:180rpx;height:180rpx;" src="../../im/taohua.jpg"></image>
+  </view>
+  <view class='logo'>
+    <image style="width:180rpx;height:180rpx;" src="../../im/yueji.jpg"></image>
+  </view>
+</view>
+<view class='white'>
+  <button class="d1" bindtap='oT' hover-class='btn-click-3' >
+    查看更多
+  </button>
+</view>

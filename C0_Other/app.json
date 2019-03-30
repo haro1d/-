@@ -1,0 +1,50 @@
+{
+  "pages":[ 
+   
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/index1/index1", 
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/order/order",
+    "pages/person/person",
+    "pages/suggestion/suggestion"
+    
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFEE00",
+    "navigationBarTitleText": "xx花屋",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#CCFF00"
+  },
+  "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "/im/index/index.png",
+          "selectedIconPath": "/im/index/index2.png"
+        },
+        {
+          "pagePath": "pages/order/order",
+          "text": "收藏",
+          "iconPath": "/im/index/order.png",
+          "selectedIconPath": "/im/index/order2.png"
+        },
+        {
+          "pagePath": "pages/person/person",
+          "text": "我的",
+          "iconPath": "/im/index/profile.png",
+          "selectedIconPath": "/im/index/profile2.png"
+        }
+      ],
+      "selectedColor": "#FD8238",
+      "backgroundColor": "#fff9e9"
+  }
+}
